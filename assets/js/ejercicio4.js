@@ -7,12 +7,12 @@ argumento
  */
 
 let cantidad = 5
-let arreglo = []
-for(let i = 0; i < cantidad; i++){
-    arreglo[i] = parseInt(prompt(`Ingrese el numero ${i}`))
-}
+let arreglo = [5,4,1,3,7,8,2,5]
+// for(let i = 0; i < cantidad; i++){
+//     arreglo[i] = parseInt(prompt(`Ingrese el numero ${i}`))
+// }
 
-let copia = arreglo.filter((elemento) => {
+let copia = arreglo.filter((elemento) => { // [0--5,1--5]
     if (elemento === 5){
         return elemento
     }
