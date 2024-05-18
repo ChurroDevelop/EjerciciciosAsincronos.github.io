@@ -1,0 +1,13 @@
+{
+    "nombre": "Churro",
+    "vidas": 10,
+    "vidasTotales": 25,
+    "poder": 3000,
+    "muerte": false,
+    "habilidades": ["Veneno", "Fuego", "Piedra"],
+    "fisicas": {
+        "vision": 100,
+        "audicion": 75,
+        "fuerza": 100
+    }
+}

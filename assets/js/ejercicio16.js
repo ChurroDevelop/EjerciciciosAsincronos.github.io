@@ -4,27 +4,40 @@ devuelva un número diferente. Luego, encadena las tres Promises para sumar los 
 y mostrar el resultado final.
 */
 
-function* generador() {
-    yield 1
-    yield 2
-    yield 3
-    return 4
-}
+// Se crea una nueva promesa
+new Promise((resolve) => {
+    setTimeout(() => {
+        resolve(5) // El valor inicial que devolvera la promesa como respuesta aceptada sera 5
+    }, 3000)
+})
+    .then((respuesta) => { // aqui toma la respuesta de la primera promesa
+        return new Promise((resolve) => { // se crea una nueva promesa que retornara un a condicion
+            setTimeout(() => {
+                console.log(`Numero inicial: ${respuesta}`) // imprime el valor inicial de la promesa
+                resolve(respuesta * 2); // El resolve de la nueva promesa que se retornda, tomara el valor de la respuesta de la primer promesa
+                                        // y asi sucesivamente en cada .then de las promesas
+            }, 3000)
+        })
+    })
+    .then((respuesta) => {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                console.log(`Numero despues de la primer promesa encadenada: ${respuesta}`)
+                resolve(respuesta * 2)
+            }, 3000)
+        })
+    })
+    .then((respuesta) => {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                console.log(`Numero despues de la segunda promesa encadenada: ${respuesta}`)
+                resolve(respuesta * 2)
+            }, 3000)
+        })
+    })
+    .then((respuesta) => {
+        setTimeout(() => {
+            console.log(`Numero al final de las promesas encadenadas \n Se multiplico 3 veces por 2: ${respuesta}`); // Imprime el resultado final de la promesa
+        }, 3000)
+    })
 
-let objeto = {
-    id: 1
-}
-
-console.log(JSON.stringify(objeto))
-
-let x = generador()
-
-let uno = x.next();
-let dos = x.next();
-let tres = x.next()
-let cuatro = x.next();
-
-console.log(JSON.stringify(uno));
-console.log(JSON.stringify(dos));
-console.log(JSON.stringify(tres));
-console.log(JSON.stringify(cuatro));

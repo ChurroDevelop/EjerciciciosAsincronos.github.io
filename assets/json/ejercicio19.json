@@ -1,0 +1,32 @@
+{
+    "usuario": [
+        {
+            "id": 1,
+            "nombre": "Churro",
+            "rol": [
+                "Administrador",
+                "Monitor"
+            ],
+            "edad": 18,
+            "certificados": [
+                "Tecnologo en software",
+                "Tecnico en sistemas",
+                "Curso de Php"
+            ],
+            "email": "jhonfredy2325@gmail.com"
+        },
+        {
+            "id": 2,
+            "nombre": "Jose",
+            "rol": [
+                "Visitante"
+            ],
+            "edad": 25,
+            "certificados": [
+                "Artes plasticas",
+                "Fotografia"
+            ],
+            "email": "josePanadero25@gmail.com"
+        }
+    ]
+}

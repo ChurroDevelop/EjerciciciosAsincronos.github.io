@@ -1,0 +1,35 @@
+{
+    "usuarios": [
+        {
+            "nombre": "Churro",
+            "edad": 18
+        },
+        {
+            "nombre": "Cacharro",
+            "edad": 22,
+            "email": "jdjifjdif4554@gmail.com"
+        },
+        {
+            "nombre": "Calberto",
+            "edad": 85
+        },
+        {
+            "nombre": "Andres",
+            "edad": 85
+        },
+        {
+            "nombre": "Carmelo",
+            "edad": 52
+        }
+    ],
+    "roles": [
+        "Administrador",
+        "Visitantes",
+        {
+            "Monitor": [
+                "Visualizar",
+                "Descargar"
+            ]
+        }
+    ]
+}
