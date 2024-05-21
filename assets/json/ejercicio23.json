@@ -1,0 +1,45 @@
+{
+    "jugadores": [
+        {
+            "nombre": "Skliam",
+            "habilidades": [
+                "Bola de fuego",
+                "Duende de fuego",
+                "Anillos de fuego"
+            ],
+            "vida": 20000,
+            "condicionesFisica": {
+                "fuerza": 800,
+                "visibilidad": 500,
+                "velocidad": 1000
+            }
+        },
+        {
+            "nombre": "Anchor",
+            "habilidades": [
+                "Antorchar de hielo",
+                "Escarcha congelada",
+                "Doble impacto gelido"
+            ],
+            "vida": 30000,
+            "condicionesFisica": {
+                "fuerza": 1000,
+                "visibilidad": 800,
+                "velocidad": 300
+            }
+        },
+        {
+            "nombre": "Yastim",
+            "habilidades": [
+                "Velocidad doble",
+                "Cohete electrico"
+            ],
+            "vida": 15000,
+            "condicionesFisica": {
+                "fuerza": 500,
+                "visibilidad": 700,
+                "velocidad": 2000
+            }
+        }
+    ]
+}
